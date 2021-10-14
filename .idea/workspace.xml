@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="89b872aa-fb0b-493d-99b3-faa6b8f1b2c8" name="Changes" comment="" />
+    <list default="true" id="89b872aa-fb0b-493d-99b3-faa6b8f1b2c8" name="Changes" comment="Primer borrador">
+      <change afterPath="$PROJECT_DIR$/elibros.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/los_mas_leidos.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libros.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/slider.html" beforeDir="false" afterPath="$PROJECT_DIR$/slider.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -11,12 +19,15 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1zT2kz2wwfWeVF2S8PUIszcHuzm" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -35,8 +46,16 @@
       <updated>1634157904207</updated>
       <workItem from="1634157907604" duration="1082000" />
       <workItem from="1634226459215" duration="1933000" />
-      <workItem from="1634228541334" duration="710000" />
+      <workItem from="1634228541334" duration="3273000" />
     </task>
+    <task id="LOCAL-00001" summary="Primer borrador">
+      <created>1634229315930</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1634229315930</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -53,5 +72,10 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Primer borrador" />
+    <option name="LAST_COMMIT_MESSAGE" value="Primer borrador" />
   </component>
 </project>
