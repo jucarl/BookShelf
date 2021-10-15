@@ -25,11 +25,11 @@ function dynamicClothingSection(ob) {
   h3.appendChild(h3Text);
 
   let h4 = document.createElement("h4");
-  let h4Text = document.createTextNode(ob.brand);
+  let h4Text = document.createTextNode(ob.author);
   h4.appendChild(h4Text);
 
   let h2 = document.createElement("h2");
-  let h2Text = document.createTextNode("rs  " + ob.price);
+  let h2Text = document.createTextNode("$  " + ob.price);
   h2.appendChild(h2Text);
 
   boxDiv.appendChild(boxLink);
@@ -85,7 +85,7 @@ httpRequest.onreadystatechange = function() {
 };
 httpRequest.open(
   "GET",
-  "https://5d76bf96515d1a0014085cf9.mockapi.io/product",
+  "https://6168d48e09e030001712c0e0.mockapi.io/Books",
   true
 );
 httpRequest.send();

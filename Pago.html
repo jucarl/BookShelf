@@ -2,44 +2,50 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Pago</title>
-    <link rel="stylesheet" type="text/css" href="css/estilos.css" title="style" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Lato|Lora|Spectral+SC:300" rel="stylesheet">
-    <script type="application/javascript" src="js/eventos.js"></script>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <link rel="stylesheet" href="/style.css"> -->
+    <title> BookShelf </title>
+    <!-- favicon -->
+    <link rel="icon" href="https://yt3.ggpht.com/a/AGF-l78km1YyNXmF0r3-0CycCA0HLA_i6zYn_8NZEg=s900-c-k-c0xffffffff-no-rj-mo" type="image/gif" sizes="16x16">
+    <!-- header links -->
+    <script src="https://kit.fontawesome.com/4a3b1f73a2.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <!-- slider links -->
+    <!-- <script src="http://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> -->
+    <script src="js/jQuery3.4.1.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
 </head>
 <body>
 
 <div class="defaultbody" id="contenedor">
     <header>
-
+        <div id="1"></div>
+        <script>
+            load("header.html");
+            function load(url)
+            {
+                req = new XMLHttpRequest();
+                req.open("GET", url, false);
+                req.send(null);
+                document.getElementById(1).innerHTML = req.responseText;
+            }
+        </script>
     </header>
-
-
-    <nav>
-        <hr>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="producto.html">Productos</a></li>
-            <li><a href="about.html">Acerca de</a></li>
-        </ul>
-        <hr>
-    </nav>
-
 
     <!-- Fin de header -->
 
     <section id="content_pago">
         <form id="form-pago" method="POST" action="index.html" onsubmit="pagar();">
             <div id="pago-contenido">
-                <div id="direccion-envio" align="left">
+                <div id="direccion-envio">
 
                     <table id="info-envio">
-                        <tr><td>Address:</td><td><input type="text" id="addr-pago-ln1" class="addr-pago" required="required" placeholder="123 Sesame Street "></td></tr>
+                        <tr><td>Address:</td><td><label for="addr-pago-ln1"></label><input type="text" id="addr-pago-ln1" class="addr-pago" required="required" placeholder="123 Sesame Street "></td></tr>
                         <tr><td></td><td><input type="text" id="addr-pago-ln2" class="addr-pago"></td></tr>
                         <tr><td>P.C.</td><td><input placeholder="97000" type="text" id="postc-pago" required="required" pattern="\d{5}"></td></tr>
-                        <tr><td>Country: </td><td><select name="country" value="MEX" id="pais-pago" form="form-pago" onchange="checkStates();" required="required">
+                        <tr><td>Country: </td><td><select name="country"  id="pais-pago" form="form-pago" onchange="checkStates();" required="required">
                             <option value="AFG">Afghanistan</option>
                             <option value="ALA">Åland Islands</option>
                             <option value="ALB">Albania</option>
@@ -292,7 +298,7 @@
                         </select></td></tr>
                         <tr><td>State:</td>
                             <td>
-                                <select name="state" value="Yucatan" id="estado-pago" form="form-pago">
+                                <select name="state"  id="estado-pago" form="form-pago">
                                     <option value="1">Aguascalientes</option>
                                     <option value="2">Baja California</option>
                                     <option value="3">Baja California Sur</option>
@@ -345,7 +351,7 @@
                 </div>
             </div>
             <div id="cobro-contenido">
-                <div id="pago-cobro" align="left">
+                <div id="pago-cobro">
 
                     <h1>Billing</h1>
                     <label>Credit card numbrer:</label>
@@ -388,50 +394,40 @@
                 </div>
                 <div id="total-cobro" >
                     <table id="total-calc">
-                        <tr><td>Quantity</td><td id="cantidad-prods" align="right">1</td></tr>
+                        <tr><td>Quantity</td><td id="cantidad-prods" >1</td></tr>
                         <tr><td colspan="2">&nbsp;</td></tr>
-                        <tr><td>Cost</td><td id="costo-prods" align="right">$369.00</td></tr>
+                        <tr><td>Cost</td><td id="costo-prods" >$369.00</td></tr>
                         <tr><td colspan="2">&nbsp;</td></tr>
-                        <tr><td>Shipment</td><td id="costo-envio" align="right">$100.00</td></tr>
+                        <tr><td>Shipment</td><td id="costo-envio" >$100.00</td></tr>
                         <tr><td colspan="2"></td></tr>
                         <tr><td colspan="2" id="total-line" style="border-bottom: medium">&nbsp;</td></tr>
-                        <tr><td>TOTAL:</td><td id="total-prods" align="right">$469.00</td></tr>
+                        <tr><td>TOTAL:</td><td id="total-prods" >$469.00</td></tr>
                         <tr><td colspan="2" style="border-bottom: medium">&nbsp;</td></tr>
                     </table>
-
-
-
 
                 </div>
 
             </div>
 
-            <div style="width: 100%;padding-left: 45%;"><input type="submit" id="comprar" value="Confirm" align="center"></div>
+            <div style="width: 100%;padding-left: 45%;"><input type="submit" id="comprar" value="Confirm"></div>
 
 
         </form>
 
     </section>
 
-    <!-- Footer -->
-
-    <footer>
-        <hr>
-        <div id="social">
-            <ul id="red_social">
-                <li><a href="#" title="facebook"><img src="images/facebook.png"></a></li>
-                <li><a href="#" title="twitter"><img src="images/twitter.png"></a></li>
-            </ul>
-        </div>
-
-        <div id="derechos">
-            <small>&copy;2017 Librería Flourish y Blotts. Todos los derechos reservados.</small>
-        </div>
-
-    </footer >
 </div>
-<div class="alertingdivbg"  style="display: none">
-    <div class="alertingdiv"></div>
-</div>
+<!-- FOOTER -->
+<div id="4"></div>
+<script>
+    load("footer.html");
+    function load(url)
+    {
+        req = new XMLHttpRequest();
+        req.open("GET", url, false);
+        req.send(null);
+        document.getElementById(4).innerHTML = req.responseText;
+    }
+</script>
 </body>
 </html>
