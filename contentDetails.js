@@ -140,7 +140,7 @@ let httpRequest = new XMLHttpRequest()
     }
 }
 
-httpRequest.open('GET', 'https://6168d48e09e030001712c0e0.mockapi.io/Books', true)
+httpRequest.open('GET', 'https://6168d48e09e030001712c0e0.mockapi.io/Books/'+id, true)
 httpRequest.send()
 
 //http://books.cloudfoundry.com/data/books
