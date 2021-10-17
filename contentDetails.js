@@ -19,9 +19,9 @@ function dynamicContentDetails(ob)
     imageSectionDiv.id = 'imageSection'
 
     let imgTag = document.createElement('img')
-     imgTag.id = 'imgDetails'
-     //imgTag.id = ob.photos
-     imgTag.src = ob.preview
+    imgTag.id = 'imgDetails'
+    //imgTag.id = ob.photos
+    imgTag.src = ob.preview
 
     imageSectionDiv.appendChild(imgTag)
 
@@ -35,7 +35,7 @@ function dynamicContentDetails(ob)
     h1.appendChild(h1Text)
 
     let h4 = document.createElement('h4')
-    let h4Text = document.createTextNode(ob.brand)
+    let h4Text = document.createTextNode(ob.editorial)
     h4.appendChild(h4Text)
     console.log(h4);
 
@@ -43,7 +43,7 @@ function dynamicContentDetails(ob)
     detailsDiv.id = 'details'
 
     let h3DetailsDiv = document.createElement('h3')
-    let h3DetailsText = document.createTextNode('Rs ' + ob.price)
+    let h3DetailsText = document.createTextNode('$ ' + ob.price)
     h3DetailsDiv.appendChild(h3DetailsText)
 
     let h3 = document.createElement('h3')
@@ -72,8 +72,8 @@ function dynamicContentDetails(ob)
         {
             console.log("clicked" + this.src)
             imgTag.src = ob.photos[i]
-            document.getElementById("imgDetails").src = this.src 
-            
+            document.getElementById("imgDetails").src = this.src
+
         }
         productPreviewDiv.appendChild(imgTagProductPreviewDiv)
     }
@@ -111,8 +111,8 @@ function dynamicContentDetails(ob)
     detailsDiv.appendChild(h3)
     detailsDiv.appendChild(para)
     productDetailsDiv.appendChild(productPreviewDiv)
-    
-    
+
+
     productDetailsDiv.appendChild(buttonDiv)
 
 
@@ -127,7 +127,7 @@ let httpRequest = new XMLHttpRequest()
 {
     httpRequest.onreadystatechange = function()
     {
-        if(this.readyState === 4 && this.status === 200)
+        if(this.readyState === 4 && this.status == 200)
         {
             console.log('connected!!');
             let contentDetails = JSON.parse(this.responseText)
@@ -143,8 +143,7 @@ let httpRequest = new XMLHttpRequest()
     }
 }
 
-httpRequest.open('GET', 'https://books.cloudfoundry.com/data/books', true)
+httpRequest.open('GET', 'http://books.cloudfoundry.com/data/books/'+id, true)
 httpRequest.send()
-
 //http://books.cloudfoundry.com/data/books
 //https://5d76bf96515d1a0014085cf9.mockapi.io/product/

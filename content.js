@@ -58,7 +58,7 @@ let httpRequest = new XMLHttpRequest();
 
 httpRequest.onreadystatechange = function() {
   if (this.readyState === 4) {
-    if (this.status == 200) {
+    if (this.status === 200) {
       // console.log('call successful');
       contentTitle = JSON.parse(this.responseText);
       if (document.cookie.indexOf(",counter=") >= 0) {
@@ -66,15 +66,15 @@ httpRequest.onreadystatechange = function() {
         document.getElementById("badge").innerHTML = counter;
       }
       for (let i = 0; i < contentTitle.length; i++) {
-        if (contentTitle[i].isAccessory) {
+        if (!contentTitle[i].fisico) {
           console.log(contentTitle[i]);
           containerAccessories.appendChild(
-            dynamicClothingSection(contentTitle[i])
+              dynamicClothingSection(contentTitle[i])
           );
         } else {
           console.log(contentTitle[i]);
           containerClothing.appendChild(
-            dynamicClothingSection(contentTitle[i])
+              dynamicClothingSection(contentTitle[i])
           );
         }
       }
@@ -84,8 +84,9 @@ httpRequest.onreadystatechange = function() {
   }
 };
 httpRequest.open(
-  "GET",
-  "https://6168d48e09e030001712c0e0.mockapi.io/Books",
-  true
+    "GET",
+    "https://books.cloudfoundry.com/data/books",
+    true
 );
 httpRequest.send();
+//https://www.googleapis.com/books/v1/volumes?q=inauthor:dan%20brown
