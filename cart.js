@@ -30,7 +30,7 @@ function dynamicCartSection(ob,itemCounter)
     boxDiv.appendChild(boxh3)
 
     let boxh4 = document.createElement('h4')
-    let h4Text = document.createTextNode('Amount: Rs' + ob.price)
+    let h4Text = document.createTextNode('Precio: $' + ob.price)
     boxh4.appendChild(h4Text)
     boxDiv.appendChild(boxh4)
 
@@ -80,7 +80,7 @@ let buttonTag = document.createElement('button')
 buttonDiv.appendChild(buttonTag)
 
 let buttonLink = document.createElement('a')
-buttonLink.href = '/orderPlaced.html?'
+buttonLink.href = '/Pago.html?'
 buttonTag.appendChild(buttonLink)
 
 buttonText = document.createTextNode('Finalizar Orden')

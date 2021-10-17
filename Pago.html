@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- <link rel="stylesheet" href="/style.css"> -->
-    <title> BookShelf </title>
+    <title> BookShelf | Pago </title>
     <!-- favicon -->
     <link rel="icon" href="https://yt3.ggpht.com/a/AGF-l78km1YyNXmF0r3-0CycCA0HLA_i6zYn_8NZEg=s900-c-k-c0xffffffff-no-rj-mo" type="image/gif" sizes="16x16">
     <!-- header links -->
@@ -20,32 +20,20 @@
 <body>
 
 <div class="defaultbody" id="contenedor">
-    <header>
-        <div id="1"></div>
-        <script>
-            load("header.html");
-            function load(url)
-            {
-                req = new XMLHttpRequest();
-                req.open("GET", url, false);
-                req.send(null);
-                document.getElementById(1).innerHTML = req.responseText;
-            }
-        </script>
-    </header>
+
 
     <!-- Fin de header -->
 
     <section id="content_pago">
-        <form id="form-pago" method="POST" action="index.html" onsubmit="pagar();">
+        <form id="form-pago" method="POST" action="orderPlaced.html">
             <div id="pago-contenido">
                 <div id="direccion-envio">
 
                     <table id="info-envio">
-                        <tr><td>Address:</td><td><label for="addr-pago-ln1"></label><input type="text" id="addr-pago-ln1" class="addr-pago" required="required" placeholder="123 Sesame Street "></td></tr>
+                        <tr><td>Dirección:</td><td><label for="addr-pago-ln1"></label><input type="text" id="addr-pago-ln1" class="addr-pago" required="required" placeholder="123 Sesame Street "></td></tr>
                         <tr><td></td><td><input type="text" id="addr-pago-ln2" class="addr-pago"></td></tr>
-                        <tr><td>P.C.</td><td><input placeholder="97000" type="text" id="postc-pago" required="required" pattern="\d{5}"></td></tr>
-                        <tr><td>Country: </td><td><select name="country"  id="pais-pago" form="form-pago" onchange="checkStates();" required="required">
+                        <tr><td>Codigo Postal</td><td><input placeholder="97000" type="text" id="postc-pago" required="required" pattern="\d{5}"></td></tr>
+                        <tr><td>Pais: </td><td><select name="country"  id="pais-pago" form="form-pago"  required="required">
                             <option value="AFG">Afghanistan</option>
                             <option value="ALA">Åland Islands</option>
                             <option value="ALB">Albania</option>
@@ -296,7 +284,7 @@
                             <option value="ZMB">Zambia</option>
                             <option value="ZWE">Zimbabwe</option>
                         </select></td></tr>
-                        <tr><td>State:</td>
+                        <tr><td>Estado:</td>
                             <td>
                                 <select name="state"  id="estado-pago" form="form-pago">
                                     <option value="1">Aguascalientes</option>
@@ -335,7 +323,7 @@
                     </table>
 
                 </div>
-                <div id="formas-de-envio" onchange="loadPayment();">
+                <div id="formas-de-envio">
                     <table >
                         <tr>
                             <td><input type="radio" name="forma-envio" value="10" ></td><td>DHL Xpress - $10</td>
@@ -344,7 +332,7 @@
                             <td><input type="radio" name="forma-envio" value="5" ></td><td>Fedex - $5</td>
                         </tr>
                         <tr>
-                            <td><input type="radio" name="forma-envio" value="0" checked></td><td>Mail - FREE</td>
+                            <td><input type="radio" name="forma-envio" value="0" checked></td><td>Correo - Gratis</td>
 
                         </tr>
                     </table>
@@ -353,16 +341,16 @@
             <div id="cobro-contenido">
                 <div id="pago-cobro">
 
-                    <h1>Billing</h1>
-                    <label>Credit card numbrer:</label>
+                    <h1>Facturación</h1>
+                    <label>Numero Tarjeta:</label>
                     <p><input placeholder="4444333322221111" id="tarjeta" required="required" type="number" maxlength="20" min="0" pattern="(?:4[0-9]{12}(?:[0-9]{3})?|[25][1-7][0-9]{14}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\d{3})\d{11})"></p>
-                    <label>Name:</label>
-                    <p><input type="text" required="required" placeholder="Pablo Diego José Francisco de Paula Juan Nepomuceno María de los Remedios Cipriano de la Santísima Trinidad Ruiz y Picasso"></p>
+                    <label>Nombre:</label>
+                    <p><input type="text" required="required" placeholder="Pablo Diego"></p>
 
 
 
                     <div class="form-group" id="expiration-date">
-                        <label>Expiration Date</label>
+                        <label>Vencimiento</label>
 
                         <p><select required="required">
 
@@ -388,17 +376,17 @@
                                 <option value="22"> 2022</option>
                                 <option value="23"> 2023</option>
                             </select></p>
-                        <label>Security numbrer:</label>
+                        <label>CVV:</label>
                         <p><input type="number" placeholder="123" maxlength="5" min="0" pattern="\d{3,5}" ></p>
                     </div>
                 </div>
                 <div id="total-cobro" >
                     <table id="total-calc">
-                        <tr><td>Quantity</td><td id="cantidad-prods" >1</td></tr>
+                        <tr><td>Cantidad</td><td id="cantidad-prods" >1</td></tr>
                         <tr><td colspan="2">&nbsp;</td></tr>
-                        <tr><td>Cost</td><td id="costo-prods" >$369.00</td></tr>
+                        <tr><td>Precio</td><td id="costo-prods" >$369.00</td></tr>
                         <tr><td colspan="2">&nbsp;</td></tr>
-                        <tr><td>Shipment</td><td id="costo-envio" >$100.00</td></tr>
+                        <tr><td>Envío</td><td id="costo-envio" >$100.00</td></tr>
                         <tr><td colspan="2"></td></tr>
                         <tr><td colspan="2" id="total-line" style="border-bottom: medium">&nbsp;</td></tr>
                         <tr><td>TOTAL:</td><td id="total-prods" >$469.00</td></tr>

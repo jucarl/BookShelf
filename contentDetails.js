@@ -35,7 +35,7 @@ function dynamicContentDetails(ob)
     h1.appendChild(h1Text)
 
     let h4 = document.createElement('h4')
-    let h4Text = document.createTextNode(ob.brand)
+    let h4Text = document.createTextNode(ob.author)
     h4.appendChild(h4Text)
     console.log(h4);
 
@@ -47,7 +47,7 @@ function dynamicContentDetails(ob)
     h3DetailsDiv.appendChild(h3DetailsText)
 
     let h3 = document.createElement('h3')
-    let h3Text = document.createTextNode('Description')
+    let h3Text = document.createTextNode('Descripcion')
     h3.appendChild(h3Text)
 
     let para = document.createElement('p')
@@ -58,7 +58,7 @@ function dynamicContentDetails(ob)
     productPreviewDiv.id = 'productPreview'
 
     let h3ProductPreviewDiv = document.createElement('h3')
-    let h3ProductPreviewText = document.createTextNode('Product Preview')
+    let h3ProductPreviewText = document.createTextNode('Vista previa')
     h3ProductPreviewDiv.appendChild(h3ProductPreviewText)
     productPreviewDiv.appendChild(h3ProductPreviewDiv)
 
@@ -84,7 +84,7 @@ function dynamicContentDetails(ob)
     let buttonTag = document.createElement('button')
     buttonDiv.appendChild(buttonTag)
 
-    buttonText = document.createTextNode('Add to Cart')
+    buttonText = document.createTextNode('Agregar al Carrito')
     buttonTag.onclick  =   function()
     {
         let order = id+" "
