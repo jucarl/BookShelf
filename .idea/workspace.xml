@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="89b872aa-fb0b-493d-99b3-faa6b8f1b2c8" name="Changes" comment="Solucion detalles en Json">
-      <change beforePath="$PROJECT_DIR$/content.html" beforeDir="false" afterPath="$PROJECT_DIR$/content.html" afterDir="false" />
+    <list default="true" id="89b872aa-fb0b-493d-99b3-faa6b8f1b2c8" name="Changes" comment="Enlace corregido">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/cart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contentDetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/contentDetails.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +69,7 @@
       <workItem from="1634314036764" duration="5939000" />
       <workItem from="1634336752699" duration="6051000" />
       <workItem from="1634483920649" duration="9589000" />
-      <workItem from="1634495258383" duration="346000" />
+      <workItem from="1634495258383" duration="1305000" />
     </task>
     <task id="LOCAL-00001" summary="Primer borrador">
       <created>1634229315930</created>
@@ -104,7 +106,21 @@
       <option name="project" value="LOCAL" />
       <updated>1634495507843</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Solucion detalles en Json">
+      <created>1634495694753</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1634495694753</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Enlace corregido">
+      <created>1634495867428</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1634495867428</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,6 +145,7 @@
     <MESSAGE value="Añadida página de pago" />
     <MESSAGE value="Añadido JSON de libros" />
     <MESSAGE value="Solucion detalles en Json" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solucion detalles en Json" />
+    <MESSAGE value="Enlace corregido" />
+    <option name="LAST_COMMIT_MESSAGE" value="Enlace corregido" />
   </component>
 </project>

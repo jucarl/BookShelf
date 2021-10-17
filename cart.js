@@ -54,7 +54,7 @@ totalDiv.id = 'total'
 totalContainerDiv.appendChild(totalDiv)
 
 let totalh2 = document.createElement('h2')
-let h2Text = document.createTextNode('Total Amount')
+let h2Text = document.createTextNode('Total')
 totalh2.appendChild(h2Text)
 totalDiv.appendChild(totalh2)
 
@@ -63,7 +63,7 @@ function amountUpdate(amount)
 {
     let totalh4 = document.createElement('h4')
     // let totalh4Text = document.createTextNode(amount)
-    let totalh4Text = document.createTextNode('Amount: Rs ' + amount)
+    let totalh4Text = document.createTextNode('Total: $ ' + amount)
     totalh4Text.id = 'toth4'
     totalh4.appendChild(totalh4Text)
     totalDiv.appendChild(totalh4)
@@ -83,7 +83,7 @@ let buttonLink = document.createElement('a')
 buttonLink.href = '/orderPlaced.html?'
 buttonTag.appendChild(buttonLink)
 
-buttonText = document.createTextNode('Place Order')
+buttonText = document.createTextNode('Finalizar Orden')
 buttonTag.onclick = function()
 {
     console.log("clicked")
@@ -135,7 +135,7 @@ httpRequest.onreadystatechange = function()
         }
 }
 
-httpRequest.open('GET', '"https://6168d48e09e030001712c0e0.mockapi.io/Books"', true)
+httpRequest.open('GET', "https://6168d48e09e030001712c0e0.mockapi.io/Books", true)
 httpRequest.send()
 
 
