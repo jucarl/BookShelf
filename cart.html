@@ -32,7 +32,21 @@
         <h1> Checkout </h1>
         <h3 id="totalItem"> Cantidad: 0 </h3>
 
-
+        <form>
+            Elige tu forma de envío:
+            <select id="mySelect">
+                <option value="apple">Correo (Gratis)</option>
+                <option value="orange">Fedex ($150)</option>
+                <option value="pineapple">DHL ($350)</option>
+                <option value="banana">UPS ($500)</option>
+            </select>
+        </form>
+        <script>
+            function myFunction() {
+                var x = document.getElementById("mySelect").value;
+                document.getElementById("demo").innerHTML = x;
+            }
+        </script>
         <div id="cartContainer">
             <!-- JS rendered code -->
         </div>

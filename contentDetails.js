@@ -58,7 +58,7 @@ function dynamicContentDetails(ob)
     productPreviewDiv.id = 'productPreview'
 
     let h3ProductPreviewDiv = document.createElement('h3')
-    let h3ProductPreviewText = document.createTextNode('Vista previa')
+    let h3ProductPreviewText = document.createTextNode('Similares')
     h3ProductPreviewDiv.appendChild(h3ProductPreviewText)
     productPreviewDiv.appendChild(h3ProductPreviewDiv)
 
