@@ -1,21 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="89b872aa-fb0b-493d-99b3-faa6b8f1b2c8" name="Changes" comment="Carrito y Pago">
-      <change afterPath="$PROJECT_DIR$/Pago.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Paypal.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/Pago.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/bg-tarjeta-01.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/bg-tarjeta-02.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/bg-tarjeta-03.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/chip-tarjeta.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/mastercard.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/visa.png" afterDir="false" />
+    <list default="true" id="89b872aa-fb0b-493d-99b3-faa6b8f1b2c8" name="Changes" comment="Método de Envío">
+      <change afterPath="$PROJECT_DIR$/Formato IEEE 830.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pago.html" beforeDir="false" afterPath="$PROJECT_DIR$/Pago.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/cart.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Paypal.html" beforeDir="false" afterPath="$PROJECT_DIR$/Paypal.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/cart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contentDetails.html" beforeDir="false" afterPath="$PROJECT_DIR$/contentDetails.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +72,7 @@
       <workItem from="1634314036764" duration="5939000" />
       <workItem from="1634336752699" duration="6051000" />
       <workItem from="1634483920649" duration="9589000" />
-      <workItem from="1634495258383" duration="13772000" />
+      <workItem from="1634495258383" duration="21060000" />
     </task>
     <task id="LOCAL-00001" summary="Primer borrador">
       <created>1634229315930</created>
@@ -147,7 +137,42 @@
       <option name="project" value="LOCAL" />
       <updated>1634499084579</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Arreglado pago">
+      <created>1634516467935</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1634516467935</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Arreglado pago">
+      <created>1634516549194</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1634516549194</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Arreglado pago">
+      <created>1634516615494</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1634516615494</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Detallado">
+      <created>1634520163960</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1634520163960</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Método de Envío">
+      <created>1634522958779</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1634522958779</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -175,6 +200,9 @@
     <MESSAGE value="Enlace corregido" />
     <MESSAGE value="Corrección de errores" />
     <MESSAGE value="Carrito y Pago" />
-    <option name="LAST_COMMIT_MESSAGE" value="Carrito y Pago" />
+    <MESSAGE value="Arreglado pago" />
+    <MESSAGE value="Detallado" />
+    <MESSAGE value="Método de Envío" />
+    <option name="LAST_COMMIT_MESSAGE" value="Método de Envío" />
   </component>
 </project>
