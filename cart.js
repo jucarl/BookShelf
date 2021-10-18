@@ -80,7 +80,8 @@ let buttonTag = document.createElement('button')
 buttonDiv.appendChild(buttonTag)
 
 let buttonLink = document.createElement('a')
-buttonLink.href = '/Pago.html?'
+
+buttonLink.href = '/Paypal.html?'
 buttonTag.appendChild(buttonLink)
 
 buttonText = document.createTextNode('Finalizar Orden')

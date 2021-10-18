@@ -1,14 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="89b872aa-fb0b-493d-99b3-faa6b8f1b2c8" name="Changes" comment="Corrección de errores">
+    <list default="true" id="89b872aa-fb0b-493d-99b3-faa6b8f1b2c8" name="Changes" comment="Carrito y Pago">
+      <change afterPath="$PROJECT_DIR$/Pago.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Paypal.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/Pago.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/bg-tarjeta-01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/bg-tarjeta-02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/bg-tarjeta-03.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/chip-tarjeta.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/mastercard.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/visa.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pago.html" beforeDir="false" afterPath="$PROJECT_DIR$/Pago.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/cart.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/cart.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/contentDetails.html" beforeDir="false" afterPath="$PROJECT_DIR$/contentDetails.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contentDetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/contentDetails.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orderPlaced.html" beforeDir="false" afterPath="$PROJECT_DIR$/orderPlaced.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +25,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
+        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -43,6 +51,7 @@
     <property name="TODO_SCOPE" value="All Places" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -73,7 +82,7 @@
       <workItem from="1634314036764" duration="5939000" />
       <workItem from="1634336752699" duration="6051000" />
       <workItem from="1634483920649" duration="9589000" />
-      <workItem from="1634495258383" duration="3766000" />
+      <workItem from="1634495258383" duration="13772000" />
     </task>
     <task id="LOCAL-00001" summary="Primer borrador">
       <created>1634229315930</created>
@@ -131,7 +140,14 @@
       <option name="project" value="LOCAL" />
       <updated>1634496892850</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Carrito y Pago">
+      <created>1634499084579</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1634499084579</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -158,6 +174,7 @@
     <MESSAGE value="Solucion detalles en Json" />
     <MESSAGE value="Enlace corregido" />
     <MESSAGE value="Corrección de errores" />
-    <option name="LAST_COMMIT_MESSAGE" value="Corrección de errores" />
+    <MESSAGE value="Carrito y Pago" />
+    <option name="LAST_COMMIT_MESSAGE" value="Carrito y Pago" />
   </component>
 </project>
