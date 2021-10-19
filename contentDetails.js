@@ -66,9 +66,17 @@ function dynamicContentDetails(ob)
     for (let v = 0; v < ob.length; v++) {
         if (ob[v].genero === ob[id].genero) {
             console.log(ob[v]);
-            h3ProductPreviewDiv.appendChild(
-                productPreviewDiv(ob[v])
-            );}}
+            let imgTagProductPreviewDiv = document.createElement('img')
+            imgTagProductPreviewDiv.id = 'previewImg'
+            imgTagProductPreviewDiv.src = ob.photos[v]
+            imgTagProductPreviewDiv.onclick = function(event)
+            {
+                console.log("clicked" + this.src)
+                imgTag.src = ob.photos[v]
+                document.getElementById("imgDetails").src = this.src
+            }
+            }
+    }
     for(i=0; i<ob.photos.length; i++)
     {
         let imgTagProductPreviewDiv = document.createElement('img')
