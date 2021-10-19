@@ -77,20 +77,7 @@ function dynamicContentDetails(ob)
             }
             }
     }
-    for(i=0; i<ob.photos.length; i++)
-    {
-        let imgTagProductPreviewDiv = document.createElement('img')
-        imgTagProductPreviewDiv.id = 'previewImg'
-        imgTagProductPreviewDiv.src = ob.photos[i]
-        imgTagProductPreviewDiv.onclick = function(event)
-        {
-            console.log("clicked" + this.src)
-            imgTag.src = ob.photos[i]
-            document.getElementById("imgDetails").src = this.src 
-            
-        }
-        productPreviewDiv.appendChild(imgTagProductPreviewDiv)
-    }
+
 
     let buttonDiv = document.createElement('div')
     buttonDiv.id = 'button'
