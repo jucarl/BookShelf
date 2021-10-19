@@ -62,22 +62,21 @@ function dynamicContentDetails(ob)
     h3ProductPreviewDiv.appendChild(h3ProductPreviewText)
     productPreviewDiv.appendChild(h3ProductPreviewDiv)
 
-    let i, v;
-    for (let v = 0; v < ob.length; v++) {
-        if (ob[v].genero === ob[id].genero) {
-            console.log(ob[v]);
-            let imgTagProductPreviewDiv = document.createElement('img')
-            imgTagProductPreviewDiv.id = 'previewImg'
-            imgTagProductPreviewDiv.src = ob.photos[v]
-            imgTagProductPreviewDiv.onclick = function(event)
-            {
-                console.log("clicked" + this.src)
-                imgTag.src = ob.photos[v]
-                document.getElementById("imgDetails").src = this.src
-            }
-            }
+    let i;
+    for(i=0; i<ob.photos.length; i++)
+    {
+        let imgTagProductPreviewDiv = document.createElement('img')
+        imgTagProductPreviewDiv.id = 'previewImg'
+        imgTagProductPreviewDiv.src = ob.photos[i]
+        imgTagProductPreviewDiv.onclick = function(event)
+        {
+            console.log("clicked" + this.src)
+            imgTag.src = ob.photos[i]
+            document.getElementById("imgDetails").src = this.src 
+            
+        }
+        productPreviewDiv.appendChild(imgTagProductPreviewDiv)
     }
-
 
     let buttonDiv = document.createElement('div')
     buttonDiv.id = 'button'
@@ -112,6 +111,8 @@ function dynamicContentDetails(ob)
     detailsDiv.appendChild(h3)
     detailsDiv.appendChild(para)
     productDetailsDiv.appendChild(productPreviewDiv)
+    
+    
     productDetailsDiv.appendChild(buttonDiv)
 
     return mainContainer
@@ -142,5 +143,5 @@ let httpRequest = new XMLHttpRequest()
 httpRequest.open('GET', 'https://6168d48e09e030001712c0e0.mockapi.io/Books/'+id, true)
 httpRequest.send()
 
-
+//http://books.cloudfoundry.com/data/books
 //https://5d76bf96515d1a0014085cf9.mockapi.io/product/
