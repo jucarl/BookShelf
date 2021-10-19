@@ -34,6 +34,21 @@
 
     <div id="cartContainer">
         <!-- JS rendered code -->
+        <form>
+            Elige tu forma de envío:
+            <select id="mySelect">
+                <option value="apple">Correo (Gratis)</option>
+                <option value="orange">Fedex ($150)</option>
+                <option value="pineapple">DHL ($350)</option>
+                <option value="banana">UPS ($500)</option>
+            </select>
+        </form>
+        <script>
+            function myFunction() {
+                var x = document.getElementById("mySelect").value;
+                document.getElementById("demo").innerHTML = x;
+            }
+        </script>
     </div>
 
 </div>

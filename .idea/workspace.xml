@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="89b872aa-fb0b-493d-99b3-faa6b8f1b2c8" name="Changes" comment="Método de Envío">
-      <change afterPath="$PROJECT_DIR$/Formato IEEE 830.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Paypal.html" beforeDir="false" afterPath="$PROJECT_DIR$/Paypal.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/cart.js" afterDir="false" />
-    </list>
+    <list default="true" id="89b872aa-fb0b-493d-99b3-faa6b8f1b2c8" name="Changes" comment="Método de Envío" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -73,6 +68,7 @@
       <workItem from="1634336752699" duration="6051000" />
       <workItem from="1634483920649" duration="9589000" />
       <workItem from="1634495258383" duration="21060000" />
+      <workItem from="1634613235131" duration="552000" />
     </task>
     <task id="LOCAL-00001" summary="Primer borrador">
       <created>1634229315930</created>
