@@ -104,7 +104,7 @@ httpRequest.onreadystatechange = function()
             contentTitle = JSON.parse(this.responseText)
 
             let counter = Number(document.cookie.split(',')[1].split('=')[1])
-            document.getElementById("totalItem").innerHTML = ('Total Items: ' + counter)
+            document.getElementById("totalItem").innerHTML = ('Total de Productos: ' + counter)
 
             let item = document.cookie.split(',')[0].split('=')[1].split(" ")
             console.log(counter)
