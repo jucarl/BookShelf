@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title> Cart | E-COMMERCE WEBSITE BY EDYODA </title>
+    <title> Cart | BookShelf </title>
     <link rel="stylesheet" href="css/cart.css">
     <!-- favicon -->
     <link rel="icon" href="https://yt3.ggpht.com/a/AGF-l78km1YyNXmF0r3-0CycCA0HLA_i6zYn_8NZEg=s900-c-k-c0xffffffff-no-rj-mo" type="image/gif" sizes="16x16">
@@ -30,7 +30,7 @@
 <!-- CART CONTAINER -->
 <div id="cartMainContainer">
     <h1> Checkout </h1>
-    <h3 id="totalItem"> Total Items: 0 </h3>
+    <h3 id="totalItem"> Total de Productos: 0 </h3>
 
     <div id="cartContainer">
         <!-- JS rendered code -->
@@ -49,29 +49,34 @@
                 document.getElementById("demo").innerHTML = x;
             }
         </script>
-        <div id=button>
-        <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+        <div id="totalContainer">
+            <div id="button">
+                <div id="a">
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
 
-            <!-- Identify your business so that you can collect the payments. -->
-            <input type="hidden" name="business" value="chavez.jc137@gmail.com">
+                    <!-- Identify your business so that you can collect the payments. -->
+                    <input type="hidden" name="business" value="chavez.jc137@gmail.com">
 
-            <!-- Specify a Buy Now button. -->
-            <input type="hidden" name="cmd" value="_xclick">
+                    <!-- Specify a Buy Now button. -->
+                    <input type="hidden" name="cmd" value="_xclick">
 
-            <!-- Specify details about the item that buyers will purchase. -->
-            <input type="hidden" name="item_name" value="Pago Libros">
-            <input type="hidden" name="amount" value="">
-            <input type="hidden" name="currency_code" value="MXN">
-            <input type="hidden" name="shipping" value="1">
-            <!-- Display the payment button. -->
-            <input type="image" name="submit" border="0"
-                   src="https://www.paypalobjects.com/es_XC/MX/i/btn/btn_buynowCC_LG.gif"
-                   alt="Buy Now">
-            <img alt="" border="0" width="1" height="1"
-                 src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" >
+                    <!-- Specify details about the item that buyers will purchase. -->
+                    <input type="hidden" name="item_name" value="Pago Libros">
+                    <input type="hidden" name="amount" value="">
+                    <input type="hidden" name="currency_code" value="MXN">
+                    <input type="hidden" name="shipping" value="1">
+                    <!-- Display the payment button. -->
+                    <input type="image" name="submit" border="0"
+                           src="https://www.paypalobjects.com/es_XC/MX/i/btn/btn_buynowCC_LG.gif"
+                           alt="Buy Now">
+                    <img alt="" border="0" width="1" height="1"
+                         src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" >
 
-        </form>
+                </form>
+            </div>
+            </div>
         </div>
+
     </div>
 
 </div>
