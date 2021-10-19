@@ -61,9 +61,6 @@ totalDiv.appendChild(totalh2)
 // TO UPDATE THE TOTAL AMOUNT
 function amountUpdate(amount)
 {
-    let form = document.createElement("form");
-    let formElement = document.createElement("select");
-    var optionElement = document.createElement("option");
     let totalh4 = document.createElement('h4')
     // let totalh4Text = document.createTextNode(amount)
     let totalh4Text = document.createTextNode('Total: $ ' + amount)
@@ -83,33 +80,12 @@ let buttonTag = document.createElement('button')
 buttonDiv.appendChild(buttonTag)
 
 let buttonLink = document.createElement('a')
-
 buttonLink.href = '/Paypal.html?'
 buttonTag.appendChild(buttonLink)
 
 buttonText = document.createTextNode('Finalizar Orden')
 buttonTag.onclick = function()
 {
-    var x = document.getElementById("mySelect").value;
-    var xhr = new XMLHttpRequest();
-    xhr.open("POST", "https://6168d48e09e030001712c0e0.mockapi.io/Shipment");
-    xhr.setRequestHeader("Accept", "application/json");
-    xhr.setRequestHeader("Content-Type", "application/json");
-
-    xhr.onreadystatechange = function () {
-        if (xhr.readyState === 4) {
-            console.log(xhr.status);
-            console.log(xhr.responseText);
-        }};
-
-    var data = `{
-  "Id": 1,
-  "FormaEnvio": Correo ,
-  "Usuario": Default,
-  "Price": 18.00
-}`;
-
-    xhr.send(data);
     console.log("clicked")
 }  
 //dynamicCartSection()
