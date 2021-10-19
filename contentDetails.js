@@ -62,7 +62,13 @@ function dynamicContentDetails(ob)
     h3ProductPreviewDiv.appendChild(h3ProductPreviewText)
     productPreviewDiv.appendChild(h3ProductPreviewDiv)
 
-    let i;
+    let i, v;
+    for (let v = 0; v < ob.length; v++) {
+        if (ob[v].genero === ob[id].genero) {
+            console.log(ob[v]);
+            h3ProductPreviewDiv.appendChild(
+                productPreviewDiv(ob[v])
+            );}}
     for(i=0; i<ob.photos.length; i++)
     {
         let imgTagProductPreviewDiv = document.createElement('img')
@@ -111,8 +117,6 @@ function dynamicContentDetails(ob)
     detailsDiv.appendChild(h3)
     detailsDiv.appendChild(para)
     productDetailsDiv.appendChild(productPreviewDiv)
-    
-    
     productDetailsDiv.appendChild(buttonDiv)
 
     return mainContainer
@@ -143,5 +147,5 @@ let httpRequest = new XMLHttpRequest()
 httpRequest.open('GET', 'https://6168d48e09e030001712c0e0.mockapi.io/Books/'+id, true)
 httpRequest.send()
 
-//http://books.cloudfoundry.com/data/books
+
 //https://5d76bf96515d1a0014085cf9.mockapi.io/product/
