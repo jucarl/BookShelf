@@ -3,8 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="89b872aa-fb0b-493d-99b3-faa6b8f1b2c8" name="Changes" comment="Detalles de carrito">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/cart.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Search.js" beforeDir="false" afterPath="$PROJECT_DIR$/Search.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/cart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orderPlaced.js" beforeDir="false" afterPath="$PROJECT_DIR$/orderPlaced.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +75,8 @@
       <workItem from="1634336752699" duration="6051000" />
       <workItem from="1634483920649" duration="9589000" />
       <workItem from="1634495258383" duration="21060000" />
-      <workItem from="1634613235131" duration="3252000" />
+      <workItem from="1634613235131" duration="5083000" />
+      <workItem from="1634672417249" duration="13822000" />
     </task>
     <task id="LOCAL-00001" summary="Primer borrador">
       <created>1634229315930</created>
@@ -214,7 +218,35 @@
       <option name="project" value="LOCAL" />
       <updated>1634616258109</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Detalles de carrito">
+      <created>1634616541015</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1634616541015</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Detalles de carrito">
+      <created>1634616858891</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1634616858891</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Detalles de carrito">
+      <created>1634616966203</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1634616966203</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Detalles de carrito">
+      <created>1634617018978</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1634617018978</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
